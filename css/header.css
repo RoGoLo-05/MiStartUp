@@ -6,6 +6,9 @@ header {
     align-items: center; /* Centra los elementos verticalmente dentro del header */
     padding: 20px; /* Agrega espacio interno para que no quede pegado a los bordes */
     background: black; /* Establece el fondo del header en negro */
+    position: sticky; /* Hace que el header sea sticky */
+    top: 0; /* Hace que se quede pegado al tope de la ventana */
+    z-index: 1000; /* Asegura que el header quede por encima del contenido */
 }
 
 .logotitulo a{
@@ -70,6 +73,7 @@ nav a:hover{
         left: 0; /*left y right se utilizan para hacer que el menú ocupe todo el ancho disponible de la pantalla o de su contenedor padre.*/
         right: 0;
         z-index: 10;
+        box-sizing: border-box; /* Asegura que el padding y el borde no aumenten el tamaño del elemento */
     }
 
     nav ul li {
