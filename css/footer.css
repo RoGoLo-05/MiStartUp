@@ -1,0 +1,83 @@
+/*FOOTER*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column; /*footer-content arriba y footer-bottom abajo*/
+    align-items: center;
+}
+
+.footer-content {
+    display: flex; /*Enlaces rápidos a la izquierda y redes sociales a la derecha*/
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-links{
+    margin-left: 15vw;
+}
+
+.footer-social{
+    margin-right: 15vw;
+}
+
+.footer-links h3, .footer-social h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: rgb(255, 0, 0); /* Rojo para los encabezados */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: rgb(175, 0, 0); /* Rojo al pasar el ratón */
+}
+
+.footer-social .social-icons a {
+    margin: 0 15px;
+    font-size: 30px; /* Tamaño de los íconos */
+    color: white;
+    transition: opacity 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+    opacity: 0.5; /* Efecto de hover para los íconos */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: rgb(175, 0, 0); /* Rojo para el texto de derechos */
+}
+
+@media (max-width: 768px) {
+    .footer-links{
+        margin-left: 5vw;
+    }
+    
+    .footer-social{
+        margin-right: 5vw;
+    }
+}
+
