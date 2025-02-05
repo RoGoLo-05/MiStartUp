@@ -11,4 +11,3 @@ Bienvenido a **FitZone**, tu tienda online especializada en productos para el gi
 ## Tecnologías Utilizadas
 Este proyecto está desarrollado con las siguientes tecnologías:
 - **Frontend:** HTML, CSS, JavaScript
-- **Backend:** Node.js (Express)
