@@ -1,0 +1,65 @@
+/* Estilos generales de la sección */
+.productos-destacados {
+    text-align: center; /* Centra el texto */
+    padding: 50px 20px; /* Espaciado interno */
+    background-color: #f5f5f5; /* Color de fondo */
+}
+
+/* Estilo del encabezado de la sección */
+.productos-destacados h2 {
+    font-size: 2rem; /* Tamaño de fuente */
+    margin-bottom: 30px; /* Espacio inferior */
+    color: #333; /* Color del texto */
+}
+
+/* Contenedor de las cards */
+.productos-container {
+    display: flex; /* Uso de flexbox para el diseño */
+    justify-content: center; /* Centra las cards horizontalmente */
+    gap: 30px; /* Espacio entre las cards */
+}
+
+/* Estilos de las cards */
+.producto-card {
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    width: 350px; /* Ancho de cada card */
+    background: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta el contenido desbordado */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Estilo de las imágenes dentro de las cards */
+.producto-card img {
+    width: 100%; /* Ancho completo */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+}
+
+/* Estilo del título dentro de las cards */
+.producto-card h3 {
+    margin: 15px 0; /* Espaciado superior e inferior */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+}
+
+/* Efecto hover para las cards */
+.producto-card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .productos-container {
+        flex-direction: column; /* Disposición en columna */
+        align-items: center; /* Centra las cards verticalmente */
+    }
+
+    .producto-card {
+        width: 90%; /* Ancho del 90% */
+    }
+
+    .producto-card img {
+        height: 250px; /* Altura fija para las imágenes */
+    }
+}

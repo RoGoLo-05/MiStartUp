@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitZone</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/FitZoneLogoRecortado.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"><!-- Font Awesome (v6) CDN -->
     <link rel="stylesheet" href="css/styleGlobal.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/productosDestacados.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="js/menu.js"></script>
     <script src="js/carrusel.js"></script>
@@ -18,15 +19,13 @@
 <body>
     <header>
         <div class="logotitulo">
-            <a href="index.html">
-                <img src="img/FitZoneLogoRecortado.png" alt="FitZone logo">
+            <a href="../index.html">
+                <img src="../img/FitZoneLogoRecortado.png" alt="FitZone logo">
                 <h1>FitZone</h1>
             </a>
         </div>
     
-        <!-- Icono de la hamburguesa (sólo visible en móvil) -->
         <div class="hamburguesa" onclick="toggleMenu()">
-            <!--El motivo de tener tres <div></div> dentro del contenedor .hamburguesa es para crear el icono de la hamburguesa con tres barras horizontales-->
             <div></div>
             <div></div>
             <div></div>
@@ -34,10 +33,10 @@
     
         <nav>
             <ul>
-                <li><a href="index.html" id="botonInicio">Inicio</a></li>
-                <li><a href="html/catalog.html">Productos</a></li>
-                <li><a href="html/aboutus.html">Sobre nosotros</a></li>
-                <li><a href="html/contact.html">Contacto</a></li>
+                <li><a href="../index.html" id="botonInicio">Inicio</a></li>
+                <li><a href="../html/catalog.html">Productos</a></li>
+                <li><a href="../html/aboutus.html">Sobre nosotros</a></li>
+                <li><a href="../html/contact.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -59,6 +58,27 @@
             </div>
         </div>
     </section>
+
+
+
+    <section class="productos-destacados">
+        <h2>Productos Destacados</h2>
+        <div class="productos-container">
+            <a href="html/catalog.html" class="producto-card">
+                <img src="img/barras.jpg" alt="Producto 1">
+                <h3>Barras</h3>
+            </a>
+            <a href="html/catalog.html" class="producto-card">
+                <img src="img/curldebiceps.jpg" alt="Producto 2">
+                <h3>Curl de bíceps</h3>
+            </a>
+            <a href="html/catalog.html" class="producto-card">
+                <img src="img/discos.jpg" alt="Producto 3">
+                <h3>Discos</h3>
+            </a>
+        </div>
+    </section>
+    
 
 
 

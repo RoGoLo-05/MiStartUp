@@ -1,0 +1,52 @@
+/* Contenedor del carrito debajo del header */
+.carrito-contenedor {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background: #f4f4f4;
+}
+
+.carrito-icono {
+    position: relative;
+    cursor: pointer;
+    color: black;
+    font-size: 24px;
+}
+
+#carrito-cantidad {
+    background: red;
+    color: white;
+    font-size: 14px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -10px;
+}
+
+/* Grid de productos */
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.producto-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: white;
+    text-align: center;
+}
+
+.producto-card:hover {
+    transform: scale(1.05);
+}
+
+.producto-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}

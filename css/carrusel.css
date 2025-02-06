@@ -7,16 +7,19 @@
     overflow: hidden; /* Oculta el contenido que se desborda */
 }
 
+/* Imagen de fondo para la primera diapositiva */
 #imagenCarrusel1 {
-    background-image: url(../img/gymCarrusel1.jpg); /* Imagen de fondo para la primera diapositiva */
+    background-image: url(../img/gymCarrusel1.jpg);
 }
 
+/* Imagen de fondo para la segunda diapositiva */
 #imagenCarrusel2 {
-    background-image: url(../img/gymCarrusel2.jpeg); /* Imagen de fondo para la segunda diapositiva */
+    background-image: url(../img/gymCarrusel2.jpeg);
 }
 
+/* Imagen de fondo para la tercera diapositiva */
 #imagenCarrusel3 {
-    background-image: url(../img/gymCarrusel3.jpg); /* Imagen de fondo para la tercera diapositiva */
+    background-image: url(../img/gymCarrusel3.jpg);
 }
 
 /* Contenedor de las imágenes */
@@ -53,11 +56,13 @@
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
 }
 
+/* Estilo del encabezado dentro del texto del carrusel */
 .carrusel-texto h1 {
     font-size: 4rem; /* Tamaño de fuente grande para el encabezado */
     margin-bottom: 10px; /* Espacio inferior */
 }
 
+/* Estilo del párrafo dentro del texto del carrusel */
 .carrusel-texto p {
     font-size: 1.5rem; /* Tamaño de fuente para el párrafo */
 }
@@ -76,7 +81,7 @@
     font-size: 1.2rem;
     padding: 12px 25px;
     border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 /* Botón de Contactar */
@@ -91,16 +96,16 @@
     color: rgb(0, 0, 0);
 }
 
-/* Efecto hover */
+/* Efecto hover para el botón de Contactar */
 .contacto:hover {
     transform: scale(1.05);
 }
 
+/* Efecto hover para el botón de Comprar */
 .comprar:hover {
     background-color: red;
     transform: scale(1.05);
 }
-
 
 /* Responsive para móviles */
 @media (max-width: 768px) {

@@ -1,0 +1,11 @@
+.sobre-nosotros{
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.sobre-nosotros h2{
+    color: red;
+    margin-bottom: 15px;
+}
