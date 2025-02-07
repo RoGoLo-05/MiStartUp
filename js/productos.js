@@ -1,10 +1,10 @@
 const productos = [
-    { id: 1, nombre: "Mancuernas", precio: 30, imagen: "../img/mancuernas.jpg" },
-    { id: 2, nombre: "Banda de resistencia", precio: 15, imagen: "../img/banda.jpg" },
-    { id: 3, nombre: "Disco 10kg", precio: 40, imagen: "../img/disco.jpg" },
-    { id: 4, nombre: "Esterilla", precio: 25, imagen: "../img/esterilla.jpg" },
-    { id: 5, nombre: "Cuerda de saltar", precio: 10, imagen: "../img/cuerda.jpg" },
-    { id: 6, nombre: "Guantes de entrenamiento", precio: 20, imagen: "../img/guantes.jpg" }
+    { id: 1, nombre: "Barra", precio: 30, imagen: "../img/barra.jpg" },
+    { id: 2, nombre: "Discos", precio: 15, imagen: "../img/discos.jpg" },
+    { id: 3, nombre: "Mancuernas", precio: 40, imagen: "../img/mancuernas.jpg" },
+    { id: 4, nombre: "Barras", precio: 25, imagen: "../img/barras.jpg" },
+    { id: 5, nombre: "Set discos", precio: 10, imagen: "../img/setdiscos.jpg" },
+    { id: 6, nombre: "Set de mancuernas", precio: 20, imagen: "../img/setmancuernas.jpg" }
 ];
 
 let carrito = [];

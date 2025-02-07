@@ -1,11 +1,21 @@
 .sobre-nosotros{
     max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 100px auto;
     text-align: center;
 }
 
 .sobre-nosotros h2{
     color: red;
     margin-bottom: 15px;
+}
+
+.sobre-nosotros p{
+    margin-bottom: 50px;
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .sobre-nosotros{
+        max-width: 500px;
+    }
 }

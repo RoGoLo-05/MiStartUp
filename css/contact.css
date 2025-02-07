@@ -1,7 +1,6 @@
 .contacto {
     max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
+    margin: 100px auto;
     text-align: center;
 }
 
@@ -10,20 +9,24 @@
     margin-bottom: 15px;
 }
 
+.contacto .parrafoContactar {
+    margin-bottom: 30px;
+}
+
 .contacto form {
     display: flex;
     flex-direction: column;
     gap: 15px;
     text-align: left;
     max-width: 500px;
-    margin: 20px auto;
+    margin: auto;
 }
 
 .contacto input, .contacto textarea {
-    width: 100%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    margin-bottom: 7px;
 }
 
 .contacto button {
@@ -32,8 +35,16 @@
     padding: 10px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .contacto button:hover {
     background-color: darkred;
+}
+
+@media (max-width: 768px) {
+    .contacto{
+        max-width: 550px;
+    }
 }
