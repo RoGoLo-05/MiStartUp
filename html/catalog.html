@@ -23,16 +23,18 @@
                 <h1>FitZone</h1>
             </a>
         </div>
-
+    
+        <!-- Icono de la hamburguesa (sólo visible en móvil) -->
         <div class="hamburguesa" onclick="toggleMenu()">
+            <!--El motivo de tener tres <div></div> dentro del contenedor .hamburguesa es para crear el icono de la hamburguesa con tres barras horizontales-->
             <div></div>
             <div></div>
             <div></div>
         </div>
-
+    
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../index.html" id="botonInicio">Inicio</a></li>
                 <li><a href="../html/catalog.html">Productos</a></li>
                 <li><a href="../html/aboutus.html">Sobre nosotros</a></li>
                 <li><a href="../html/contact.html">Contacto</a></li>
@@ -51,22 +53,27 @@
     <section class="productos-container" id="productos"></section>
 
     <div class="paginacion">
-        <button id="prevPage">Anterior</button>
-        <span id="pageNumber">1</span>
-        <button id="nextPage">Siguiente</button>
+        <button id="btn-prev">Anterior</button>
+        <button id="btn-next">Siguiente</button>
     </div>
 
-    <!-- Modal del carrito -->
+    <div class="pagina-actual">
+        <span>Página <span id="numero-pagina">1</span></span>
+    </div>
+    
+
     <div id="carrito-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="toggleCarrito()">&times;</span>
-            <h2>Carrito de Compras</h2>
-            <div id="carrito-items"></div>
-            <p>Total: $<span id="total-precio">0.00</span></p>
-            <button onclick="comprar()">Comprar</button>
-            <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+        <span class="close" onclick="toggleCarrito()">&times;</span>
+        <h2>Carrito</h2>
+        <div id="carrito-items"></div>
+        <h3>Total: $<span id="total-precio">0</span></h3>
+    
+        <div class="carrito-botones">
+            <button class="btn-comprar" onclick="comprarCarrito()">Comprar</button>
+            <button class="btn-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
         </div>
     </div>
+    
 
     <footer>
         <div class="footer-content">
