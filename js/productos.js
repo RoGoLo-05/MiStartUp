@@ -143,11 +143,13 @@ function vaciarCarrito() {
 
 function comprarCarrito() {
     if (carrito.length === 0) {
-        alert("Tu carrito está vacío. Agrega productos antes de comprar.");
+        alert("Tu carrito está vacío.");
         return;
     }
 
-    alert("¡Compra realizada con éxito! 🎉 Gracias por tu compra.");
-    carrito = []; // Vacía el carrito después de la compra
-    actualizarCarrito();
+    alert("¡Compra realizada con éxito!");
+    carrito = []; // Vaciar el carrito
+    actualizarCarrito(); // Refrescar el carrito para que se vea vacío
+    toggleCarrito(); // Cierra el carrito automáticamente
 }
+
