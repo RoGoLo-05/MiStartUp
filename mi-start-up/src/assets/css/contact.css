@@ -1,3 +1,9 @@
+.todo-contacto{
+    background-color: #191919;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
 .contacto {
     max-width: 800px;
     margin: 100px auto;
@@ -7,6 +13,14 @@
 .contacto h2 {
     color: red;
     margin-bottom: 15px;
+}
+
+h3{
+    color: red;
+}
+
+p{
+    color: white;
 }
 
 .contacto .parrafoContactar {
@@ -22,11 +36,19 @@
     margin: auto;
 }
 
+.contacto label{
+    color: white;
+}
+
 .contacto input, .contacto textarea {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     margin-bottom: 7px;
+}
+
+#email{
+    font-family: 'Poppins', sans-serif;
 }
 
 .contacto button {
@@ -36,7 +58,7 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .contacto button:hover {

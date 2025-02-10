@@ -10,8 +10,8 @@
       <h1>FITZONE</h1>
       <p>Alcanza tu mejor versión con nosotros.</p>
       <div class="carrusel-botones">
-        <a href="/html/contact.html" class="btn contacto">Contactar</a>
-        <a href="/html/catalog.html" class="btn comprar">Comprar</a>
+        <router-link to="/contact" class="btn contacto">Contactar</router-link>
+        <router-link to="/catalog" class="btn comprar">Comprar</router-link>
       </div>
     </div>
   </section>

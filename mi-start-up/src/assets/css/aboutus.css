@@ -1,6 +1,12 @@
+.todo-nosotros{
+    background-color: #191919;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 .sobre-nosotros{
-    max-width: 800px;
-    margin: 100px auto;
+    max-width: 900px;
+    margin: auto;
     text-align: center;
 }
 
@@ -11,11 +17,44 @@
 
 .sobre-nosotros p{
     margin-bottom: 50px;
+    color: white;
 }
 
-/* Media Query para pantallas pequeñas (móviles) */
+.valores {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.valores li {
+    background: #f8f8f8;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.donde{
+    margin-top: 50px;
+}
+
+.mapa {
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .sobre-nosotros{
+    .sobre-nosotros {
         max-width: 500px;
+        padding: 10px;
+    }
+
+    .valores {
+        font-size: 16px;
     }
 }

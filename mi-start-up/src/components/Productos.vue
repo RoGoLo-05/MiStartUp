@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="tienda">
       <!-- Icono del carrito -->
       <div class="carrito-contenedor">
         <div class="carrito-icono" @click="toggleCarrito">

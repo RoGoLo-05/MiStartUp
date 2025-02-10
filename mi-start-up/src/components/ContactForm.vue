@@ -1,4 +1,5 @@
 <template>
+  <div class="todo-contacto">
     <section class="contacto">
       <h2>Contáctanos</h2>
       <p class="parrafoContactar">
@@ -24,6 +25,8 @@
       <p>Teléfono: +34 645 378 218</p>
       <p>Dirección: Calle Fitness, 69, Sevilla, Andalucía</p>
     </section>
+  </div>
+    
 </template>
 
 <script>

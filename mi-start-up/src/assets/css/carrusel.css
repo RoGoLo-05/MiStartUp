@@ -3,7 +3,7 @@
     background-color: black; /* Fondo negro para el carrusel */
     position: relative; /* Posicionamiento relativo para contener elementos posicionados absolutamente */
     width: 100%; /* Ancho completo del contenedor */
-    height: 90vh; /* Altura del 90% de la ventana gráfica */
+    height: 95vh; /* Altura del 90% de la ventana gráfica */
     overflow: hidden; /* Oculta el contenido que se desborda */
 }
 
@@ -110,7 +110,7 @@
 /* Responsive para móviles */
 @media (max-width: 768px) {
     .carrusel {
-        height: 90vh; /* Ajusta la altura del carrusel en pantallas pequeñas */
+        height: 95vh; /* Ajusta la altura del carrusel en pantallas pequeñas */
     }
 
     .carrusel-texto h1 {

@@ -3,19 +3,19 @@
     display: flex;
     justify-content: flex-end;
     padding: 10px 20px;
-    background: #f4f4f4;
+    background: #3d3d3d;
 }
 
 .carrito-icono {
     position: relative;
     cursor: pointer;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 24px;
 }
 
 #carrito-cantidad {
     background: red;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 14px;
     padding: 3px 7px;
     border-radius: 50%;
@@ -29,7 +29,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 8px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ffffff;
 }
 
 /* Ajuste de los textos dentro del carrito */
@@ -49,13 +49,18 @@
 }
 
 
+
+.tienda{
+    background-color: #191919;
+}
+
 /* Contenedor de los productos */
 .productos-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Se adapta automáticamente */
     margin: auto;
-    gap: 50px;
-    padding: 80px;
+    gap: 60px;
+    padding: 5vw 10vw 7vw 10vw;
     text-align: center;
 }
 
@@ -80,7 +85,7 @@
 
 /* Mantener el tamaño original de la imagen */
 .producto-card img {
-    width: 100%;
+    width: 75%;
     height: auto;
     border-radius: 5px;
 }
@@ -95,17 +100,27 @@
     flex-grow: 1; /* Ocupa el espacio disponible */
 }
 
+.producto-info h3{
+    font-size: 30px;
+}
+
+.producto-info p{
+    font-size: 20px;
+}
+
 /* Estilos del botón */
 .btn-agregar {
     background: red;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px;
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
     border-radius: 5px;
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn-agregar:hover {
@@ -113,6 +128,10 @@
 }
 
 /* Controles de paginación */
+.pagina-actual{
+    color: white;
+}
+
 .paginacion {
     display: flex;
     justify-content: center;
@@ -121,8 +140,8 @@
 }
 
 .paginacion button {
-    background: black;
-    color: white;
+    background: rgb(255, 0, 0);
+    color: rgb(0, 0, 0);
     border: none;
     padding: 10px 20px;
     margin: 0 5px;
@@ -142,7 +161,7 @@
     top: -100%; /* Inicia fuera de la pantalla */
     left: 50%;
     transform: translate(-50%, 0);
-    background: white;
+    background: rgb(0, 0, 0);
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     width: 300px;
@@ -151,6 +170,7 @@
     z-index: 2000;
     opacity: 0;
     transition: top 0.5s ease-in-out, opacity 0.3s ease-in-out;
+    color: white;
 }
 
 /* Cuando se muestra */
@@ -166,9 +186,9 @@
     opacity: 0;
 }
 
-
-
-
+.modal h2{
+    color: rgb(255, 0, 51);
+}
 
 /* Botón de cierre del modal */
 .close {
