@@ -138,9 +138,8 @@
 
 
 .modal {
-    display: none;
     position: fixed;
-    top: -100%; /* Empieza arriba */
+    top: -100%; /* Inicia fuera de la pantalla */
     left: 50%;
     transform: translate(-50%, 0);
     background: white;
@@ -150,13 +149,25 @@
     border-radius: 8px;
     text-align: center;
     z-index: 2000;
-    transition: top 0.4s ease-in-out; /* Transición suave */
+    opacity: 0;
+    transition: top 0.5s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-/* Cuando se muestra, baja suavemente */
+/* Cuando se muestra */
 .modal.show {
-    display: block;
+    top: 50%; /* Bajar al centro */
+    opacity: 1;
+    transform: translate(-50%, -50%);
 }
+
+/* Estado inicial del modal */
+.modal.hide {
+    top: -100%; /* Fuera de la pantalla */
+    opacity: 0;
+}
+
+
+
 
 
 /* Botón de cierre del modal */
