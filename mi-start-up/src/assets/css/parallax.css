@@ -21,14 +21,6 @@
     background-image: url('../../../public/img/parallax1.avif');
 }
 
-.parallax-2 {
-    background-image: url('../../../public/img/parallax2.jpg');
-}
-
-.parallax-3 {
-    background-image: url('../../../public/img/parallax3.png');
-}
-
 /* Oscurecer imágenes y mejorar contraste */
 .overlay {
     background: rgba(0, 0, 0, 0.6);

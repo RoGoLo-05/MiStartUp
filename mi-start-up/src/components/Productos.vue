@@ -1,5 +1,11 @@
 <template>
     <div class="tienda">
+      <!-- Notificación de agregado al carrito -->
+      <div v-if="notificacionVisible" class="notificacion">
+        {{ mensajeNotificacion }}
+      </div>
+
+      
       <!-- Icono del carrito -->
       <div class="carrito-contenedor">
         <div class="carrito-icono" @click="toggleCarrito">
@@ -25,11 +31,8 @@
       <!-- Paginación -->
       <div class="paginacion">
         <button :disabled="paginaActual === 1" @click="paginaAnterior">Anterior</button>
+        <span class="pagina-actual">{{ paginaActual }}</span>
         <button :disabled="paginaActual * productosPorPagina >= productos.length" @click="siguientePagina">Siguiente</button>
-      </div>
-  
-      <div class="pagina-actual">
-        <span>Página {{ paginaActual }}</span>
       </div>
   
       <!-- Modal del carrito -->
@@ -65,7 +68,9 @@
         carrito: [],
         paginaActual: 1,
         productosPorPagina: 12,
-        carritoModalVisible: false
+        carritoModalVisible: false,
+        notificacionVisible: false, // Estado de la notificación
+        mensajeNotificacion: "", // Mensaje de la notificación
       };
     },
     computed: {
@@ -88,18 +93,31 @@
         } else {
           this.carrito.push({ ...producto, cantidad: 1 });
         }
+
+        // Mostrar la notificación
+        this.mostrarNotificacion(`Añadido: ${producto.nombre}`);
       },
+
+      mostrarNotificacion(mensaje) {
+        this.mensajeNotificacion = mensaje;
+        this.notificacionVisible = true;
+
+        setTimeout(() => {
+          this.notificacionVisible = false;
+        }, 2000); // Ocultar después de 2 segundos
+      },
+
       toggleCarrito() {
-    this.carritoModalVisible = !this.carritoModalVisible;
-    this.$nextTick(() => {
-        const modal = document.querySelector(".modal");
-        if (this.carritoModalVisible) {
+        this.carritoModalVisible = !this.carritoModalVisible;
+        this.$nextTick(() => {
+          const modal = document.querySelector(".modal");
+          if (this.carritoModalVisible) {
             modal.classList.add("show");
-        } else {
+          } else {
             modal.classList.remove("show");
-        }
-    });
-},
+          }
+        });
+      },
 
       vaciarCarrito() {
         this.carrito = [];
