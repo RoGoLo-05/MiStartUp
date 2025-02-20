@@ -8,8 +8,8 @@
             <h3>Barras</h3>
         </router-link>
         <router-link to="/catalog" class="producto-card">
-            <img src="../../public/img/curldebiceps.jpg" alt="Producto 2">
-            <h3>Curl de bíceps</h3>
+            <img src="../../public/img/poleadoblelarga.jpg" alt="Producto 2">
+            <h3>Poleas</h3>
         </router-link>
         <router-link to="/catalog" class="producto-card">
             <img src="../../public/img/discos.jpg" alt="Producto 3">
