@@ -31,6 +31,7 @@
             style="border:0;" 
             :allowfullscreen="true"
             loading="lazy"
+            title="Localización de FitZone"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
         </div>
