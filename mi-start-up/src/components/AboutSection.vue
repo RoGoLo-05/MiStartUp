@@ -33,8 +33,24 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
           </iframe>
-
         </div>
+
+        <h2>Reseñas de Nuestros Clientes</h2>
+          <div class="reseñas">
+            <div class="reseña">
+              <p>⭐⭐⭐⭐⭐</p>
+              <p><strong>María López:</strong> "FitZone ha cambiado mi forma de entrenar. Los productos son de excelente calidad y el servicio es inmejorable."</p>
+            </div>
+            <div class="reseña">
+              <p>⭐⭐⭐⭐⭐</p>
+              <p><strong>Carlos Mendoza:</strong> "Increíble atención al cliente y productos que realmente cumplen con lo prometido. ¡Muy recomendado!"</p>
+            </div>
+            <div class="reseña">
+              <p>⭐⭐⭐⭐</p>
+              <p><strong>Elena Ramírez:</strong> "Me encantó la gran variedad de equipos de entrenamiento de los que disponen."</p>
+            </div>
+          </div>
+
     </section>
   </div>
     
