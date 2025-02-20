@@ -1,0 +1,6 @@
+projectKey=FitZone
+serverUrl=http://localhost:9000
+serverVersion=25.1.0.102122
+dashboardUrl=http://localhost:9000/dashboard?id=FitZone
+ceTaskId=2e8bbca5-016a-4ded-86eb-c5f00fc57919
+ceTaskUrl=http://localhost:9000/api/ce/task?id=2e8bbca5-016a-4ded-86eb-c5f00fc57919
